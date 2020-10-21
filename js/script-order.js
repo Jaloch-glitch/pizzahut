@@ -130,4 +130,14 @@ function order(){
         $("#delivery").hide();
     
     }
-    
+    //USER INTERFACE
+    $(document).ready(function(){
+        $("#orders").submit(function(event){
+            event.preventDefault();
+            order();
+        });
+        $("#deliveryDetails").submit(function(event) {
+            event.preventDefault();
+            makeDelivery();
+        });
+    }); 
