@@ -50,3 +50,18 @@ h3{
     margin-top: 5%;
     margin-bottom: 5%;
     background-color: transparent;
+}
+::placeholder {
+    color: white;
+}
+#name {
+    background-color: transparent;
+}
+
+#mail {
+    background-color: transparent;
+}
+.jumbotron{
+    /*styling for both jumbotron elements*/
+     background-image: url('../images/jtron.jpg.jpg');
+}
