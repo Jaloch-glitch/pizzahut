@@ -65,3 +65,41 @@ h3{
     /*styling for both jumbotron elements*/
      background-image: url('../images/jtron.jpg.jpg');
 }
+#orderTable{
+    color: whitesmoke;
+    font-size: medium;
+}
+#addorder{
+    color: whitesmoke;
+    font-size: medium;
+}
+#checkout{
+    color: whitesmoke;
+    font-size: medium;
+}
+.uaorder {
+    background-image: url("../images/jumbi.jpeg");
+    background-size: cover;
+}
+.order-summary h1, .summary, .contact {
+    color: #000;
+    font-family: 'Love Ya Like A Sister', cursive;
+    margin-top: 30px;
+}
+.click-me, button[type=submit], .deliver, .delivernot {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 2px;
+    background-color: #0044ff;
+    outline: none;
+    padding: 12.5px 13px;
+    border: none;
+    border-radius: 33px;
+    font-size: 14px;
+}
+
+.deliver, .delivernot {
+    margin: 10px;
+}
