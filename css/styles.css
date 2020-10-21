@@ -17,3 +17,6 @@ body {
 	--font-scroll-text: 'Nanum Gothic Coding', monospace;
 	--fontsize-scroll-text: 8vw;
 }
+.content__main {
+	color: var(--color-main-text);
+}
