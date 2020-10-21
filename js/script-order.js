@@ -142,3 +142,13 @@ function order(){
         });
     }); 
     var arrayTotal = []; //global array used to store all total prices for each order
+
+    //Deliver
+    $(".deliver").click(function () {
+        $('.summary').slideUp();
+        $('#list').slideUp();
+        $('.summary').text("Provide location details").slideDown();
+        $('.deliver').hide(1000);
+        $('.delivernot').hide(1000);
+        $('.cdata-overlay').slideDown();
+    });
