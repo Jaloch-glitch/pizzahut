@@ -30,3 +30,8 @@ img {
     object-fit: cover;
     background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
 }
+h3{
+    padding-top: 3%;
+    font-size: 50px;
+    padding-bottom: 2%;
+}
