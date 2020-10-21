@@ -1,11 +1,7 @@
-<!DOCTYPE <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="UTF-8" />
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Pizza Hut</title>
 		<meta name="description" content="A scrolling letters animation where some text changes depending on the page's scroll position" />
@@ -15,205 +11,211 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="css2/styles.css" />
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-    </head>
-    <body>
-        <body class="demo-2 loading">
-            <div class="container">
-                <main>
-                    <h1>Pizza Today</h1>
-                    <div class="jumbotron"><p>Dine With Us Today For The Best Pizza Today</p>
-                    </div>
-                    <div class="content">
-                        <div class="content__section">
-                            <div class="content__main">
+	</head>
+	<body class="demo-2 loading">
+		<div class="container">
+			<main>
+				<h1>Pizza Today</h1>
+				<div class="jumbotron"><p>Dine With Us Today For The Best Pizza Today</p>
+				</div>
+				<div class="content">
+					<div class="content__section">
+						<div class="content__main">
+						</div>
+						<h2 class="content__text">Pizza Hut</h2>
+					</div>
+					<div class="content__section">
+						<a class="content__link"><img class="content__img" src="images/1.jpg" alt="img"/></a>
+						<h2 class="content__text">Dine With Us</h2>
+					</div>
+					<div class="content__section">
+						<a class="content__link"><img class="content__img" src="images/menu.jpg" alt="img"/></a>
+						<h2 class="content__text">Pizza With Us</h2>
+					</div>
+					<div class="content__section">
+						<a class="content__link"><img class="content__img" src="images/3.jpg" alt="img"/></a>
+						<h2 class="content__text">Special Offer</h2>
+					</div>
+					<div class="content__section">
+						<a class="content__link content__link--nobottom"><img class="content__img" src="images/6.jpg" alt="img"/></a>
+						<h2 class="content__text">Delish!!!</h2>
+					</div>
+					<div class="content__section" id="call">
+						<h2 class="content__text">Order Now</h2>
+					</div>
+				</div>	
+			</main>
+		</div>
+	</section>
+    <section class="order" id="order">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="jumbotron">
+                        <form id="orders">
+                            <div class="form-group">
+                                <label for="name">Your Name:</label>
+                                <input type="text" class="form-control" id="name" placeholder="Name..." pattern="[a-zA-Z ]+" required>
                             </div>
-                            <h2 class="content__text">Pizza Hut</h2>
-                        </div>
-                        <div class="content__section">
-                            <a class="content__link"><img class="content__img" src="images/1.jpg" alt="img"/></a>
-                            <h2 class="content__text">Dine With Us</h2>
-                        </div>
-                        <div class="content__section">
-                            <a class="content__link"><img class="content__img" src="images/menu.jpg" alt="img"/></a>
-                            <h2 class="content__text">Pizza With Us</h2>
-                        </div>
-                        <div class="content__section">
-                            <a class="content__link"><img class="content__img" src="images/3.jpg" alt="img"/></a>
-                            <h2 class="content__text">Special Offer</h2>
-                        </div>
-                        <div class="content__section">
-                            <a class="content__link content__link--nobottom"><img class="content__img" src="images/6.jpg" alt="img"/></a>
-                            <h2 class="content__text">Delish!!!</h2>
-                        </div>
-                        <div class="content__section" id="call">
-                            <h2 class="content__text">Order Now</h2>
-                        </div>
-                    </div>
-                </section>
-                </main>
-                <section class="order" id="order">
-                    <div class="container">
-
-                        <div class="row">
-                            <div class="col-md-3"></div>
-                            <div class="col-md-6">
-                                <div class="jumbotron">
-                                    <form id="orders">
-                                        <div class="form-group">
-                                            <label for="name">Your Name:</label>
-                                            <input type="text" class="form-control" id="name" placeholder="Name..." pattern="[a-zA-Z ]+" required>
-                                        </div>
-                                        <h5>Kindly pick the following:</h5>
-                                        <div class="form-group">
-                                            <label for="pizza-flavor">Pizza flavor</label>
-                                            <select class="form-control" id="pizza-flavor" required>
-                                                <option>Hawaiian</option>
-                                                <option>Margharita</option>
-                                                <option>Marinara</option>
-                                                <option>Mushroom</option>
-                                                <option>Original Veggie</option>
-                                                <option>Oyster</option>
-                                                <option>Pepperoni</option>
-                                                <option>Pulled Pork</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="pizza-size">Pizza size</label>
-                                            <select class="form-control" id="pizza-size" required>
-                                                <option>Small</option>
-                                                <option>Medium</option>
-                                                <option>Large</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="pizza-crust">Pizza Crust</label>
-                                            <select class="form-control" id="pizza-crust" required>
-                                                <option>Gluten Free</option>
-                                                <option>Hand Tossed</option>
-                                                <option>Original</option>
-                                                <option>Pan</option>
-                                                <option>Stuffed</option>
-                                                <option>Thin</option>
-                                            </select>
-                                        </div>                
-                                            <br>
-                                            <div class="">
-                                                <div class="form-group">
-                                                    <label for="pizza-number">Number of Pizzas</label>
-                                                    <input type="number" id="quantity" name="quantity"  placeholder="PizzaNo" min="1">
-                                                    <button type="submit" name="submitButton" class= class="btn submit" id="placeorder">Place Order</button>
-                                                </div>
-                                            </div> 
-                                        </div>
-                                              
-                                    </form>
-                                </div>
+                            <h5>Kindly pick the following:</h5>
+                            <div class="form-group">
+                                <label for="pizza-flavor">Pizza flavor</label>
+                                <select class="form-control" id="pizza-flavor" required>
+                                    <option>Hawaiian</option>
+                                    <option>Margharita</option>
+                                    <option>Marinara</option>
+                                    <option>Mushroom</option>
+                                    <option>Original Veggie</option>
+                                    <option>Oyster</option>
+                                    <option>Pepperoni</option>
+                                    <option>Pulled Pork</option>
+                                </select>
                             </div>
-                        </div>
-                    </div>
-                    </div>
-                </section>
-                <section id="yourorder">
-                    <div class="uaorder">
-                        <div class="uaorder">
-                            <div class="heading">
-                                <h3 class="order-icon"><i class="fas fa-pizza-slice" ></i><span></span></h3>
-                                <h2 class="salutation"> <span class="bolder-colored">Here's your</span>&ensp;<span class="bold-colored">Order</span> </h2>
+                            <div class="form-group">
+                                <label for="pizza-size">Pizza size</label>
+                                <select class="form-control" id="pizza-size" required>
+                                    <option>Small</option>
+                                    <option>Medium</option>
+                                    <option>Large</option>
+                                </select>
                             </div>
-                                <div id="orderDetails">
-                                    <div class="row">
-                                        <div class="col-md-2"></div>
-                                        <div class="col-md-8">
-                                            <table class="table table-sm" id="orderTable">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col">Flavor</th>
-                                                        <th scope="col">Number</th>
-                                                        <th scope="col">Size</th>
-                                                        <th scope="col">Crust</th>
-                                                        <th scope="col">Total</th>
-                                                    </tr>
-                                                </thead>
-                        
-                                                <tbody id="ordersmade">
-                                                <tr>
-                                                    <td class="pizza-flavor"></td>
-                                                    <td class="number"></td>
-                                                    <td class="pizza-size"></td>
-                                                    <td class="pizza-crust"></td>
-                                                    <td class="pizzaTotal1" td>
-                                                </tr>
-                                            </tbody>
-                                            <tfoot>
-                                                <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td class="grandtot"td>
-                                                </tr>
-                                            </tfoot>
-                                        </table>
-                                        <a href="#ordersection" type="submit" name="addorder" onclick="addOrder()" class="btn  submit" id="addorder">Add Order</a>
-                                        <button type="submit" name="checkout" onclick="deliveryOptions()" class="btn submit" id="checkout">Checkout</button>
+                            <div class="form-group">
+                                <label for="pizza-crust">Pizza Crust</label>
+                                <select class="form-control" id="pizza-crust" required>
+                                    <option>Gluten Free</option>
+                                    <option>Hand Tossed</option>
+                                    <option>Original</option>
+                                    <option>Pan</option>
+                                    <option>Stuffed</option>
+                                    <option>Thin</option>
+                                </select>
+                            </div>                
+                                <br>
+                                <div class="">
+                                    <div class="form-group">
+                                        <label for="pizza-number">Number of Pizzas</label>
+                                        <input type="number" id="quantity" name="quantity"  placeholder="PizzaNo" min="1">
+                                        <button type="submit" name="submitButton" class= class="btn submit" id="placeorder">Place Order</button>
                                     </div>
-                                </div>
-                            </div>
-                     <br>  </br>
-                    </div>       
-                </section>
-                <section>
-                    <section>
-                        <div class="order-summary" id="sum-order">
-                            <h1 class="text-center" id="summary">Order Summary</h1>
-                            <h2 class="text-center summary">Hello there, your order is as follows:</h2>
-                            <ol id="list" class="text-center sum">
-                            </ol>
-                        
-                        
-                            <div class="cdata-overlay">
-                                <div class="customerdata row">
-                                    <div class="col-sm-3"></div>
-                                    <form action="" class="form-group col-sm-6 data">
-                                        <input type="text" class="form-control cdata" placeholder="Enter your Name:">
-                                        <input type="text" class="form-control cdata" placeholder="Enter your phone number: ">
-                                        <input type="text" class="form-control cdata" placeholder="Enter the location: ">
-                                        <button class="btn bg-info text-center d-block mx-auto go">Make Delivery</button>
-                                    </form>
-                        
-                                    <div class="col-sm-3"></div>
-                                </div>
-                            </div>
-                            <div class="d-block mx-auto text-center">
-                                <button class='deliver'>Make Delivery</button>
-                                <button class='delivernot'>Pick Up</button>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="contact" id="contact">
-                        <div id="contactus">
-                            <h3><b>Contact us</b></h3>
-                            
-                            <div class="row">
-                                <div class="col-md-8">
-                                    <p>Were you served right?..Leave us a message:</p>
-                                    <form id="messageForm" action="">
-                                        <div class="form-group textarea">
-                                            <textarea type="text" name="message" id="message" class="form-control" rows="8" placeholder="Your message here..." required></textarea>
-                                            <button type="submit" class="btn" onclick="clearTextarea()">SEND</button>
-                                        </div>
-                                    </form>
                                 </div> 
-                            </div> 
-                        </div>
-                
-                    </section>
+                            </div>
+                                  
+                        </form>
+                    </div>
+                </div>
             </div>
-            <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        </div>
+        </div>
+    </section>
+
+    <section id="yourorder">
+        <div class="uaorder">
+            <div class="uaorder">
+                <div class="heading">
+                    <h3 class="order-icon"><i class="fas fa-pizza-slice" ></i><span></span></h3>
+                    <h2 class="salutation"> <span class="bolder-colored">Here's your</span>&ensp;<span class="bold-colored">Order</span> </h2>
+                </div>
+                    <div id="orderDetails">
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-8">
+                                <table class="table table-sm" id="orderTable">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Flavor</th>
+                                            <th scope="col">Number</th>
+                                            <th scope="col">Size</th>
+                                            <th scope="col">Crust</th>
+                                            <th scope="col">Total</th>
+                                        </tr>
+                                    </thead>
+            
+                                    <tbody id="ordersmade">
+                                    <tr>
+                                        <td class="pizza-flavor"></td>
+                                        <td class="number"></td>
+                                        <td class="pizza-size"></td>
+                                        <td class="pizza-crust"></td>
+                                        <td class="pizzaTotal1" td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="grandtot"td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <a href="#ordersection" type="submit" name="addorder" onclick="addOrder()" class="btn  submit" id="addorder">Add Order</a>
+                            <button type="submit" name="checkout" onclick="deliveryOptions()" class="btn submit" id="checkout">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+         <br>  </br>
+        </div>       
+    </section>
+    <section>
+        <div class="order-summary" id="sum-order">
+            <h1 class="text-center" id="summary">Order Summary</h1>
+            <h2 class="text-center summary">Hello there, your order is as follows:</h2>
+            <ol id="list" class="text-center sum">
+            </ol>
         
-        <script src="" async defer></script>
-    </body>
+        
+            <div class="cdata-overlay">
+                <div class="customerdata row">
+                    <div class="col-sm-3"></div>
+                    <form action="" class="form-group col-sm-6 data">
+                        <input type="text" class="form-control cdata" placeholder="Enter your Name:">
+                        <input type="text" class="form-control cdata" placeholder="Enter your phone number: ">
+                        <input type="text" class="form-control cdata" placeholder="Enter the location: ">
+                        <button class="btn bg-info text-center d-block mx-auto go">Make Delivery</button>
+                    </form>
+        
+                    <div class="col-sm-3"></div>
+                </div>
+            </div>
+            <div class="d-block mx-auto text-center">
+                <button class='deliver'>Make Delivery</button>
+                <button class='delivernot'>Pick Up</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <div id="contactus">
+            <h3><b>Contact us</b></h3>
+            
+            <div class="row">
+                <div class="col-md-8">
+                    <p>Were you served right?..Leave us a message:</p>
+                    <form id="messageForm" action="">
+                        <div class="form-group textarea">
+                            <textarea type="text" name="message" id="message" class="form-control" rows="8" placeholder="Your message here..." required></textarea>
+                            <button type="submit" class="btn" onclick="clearTextarea()">SEND</button>
+                        </div>
+                    </form>
+                </div> 
+            </div> 
+        </div>
+
+    </section>
+    
+    
+    
+    
+    <script src="js/bootstrap.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/charming.min.js"></script>
+		<script src="js2/jquery-3.5.1.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js2/script-order.js"></script>
+	</body>
 </html>
