@@ -39,3 +39,14 @@ h3{
     color: white;
     background: transparent;
 }
+#cont {
+    text-align: center;
+    color: white;
+    margin-top: 3%;
+    font-style: italic;
+}
+#textarea {
+    margin-left: 35%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: transparent;
