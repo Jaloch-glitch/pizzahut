@@ -49,8 +49,71 @@
                         <div class="content__section" id="call">
                             <h2 class="content__text">Order Now</h2>
                         </div>
-                    </div>	
+                    </div>
+                </section>
                 </main>
+                <section class="order" id="order">
+                    <div class="container">
+                        
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-6">
+                                <div class="jumbotron">
+                                    <form id="orders">
+                                        <div class="form-group">
+                                            <label for="name">Your Name:</label>
+                                            <input type="text" class="form-control" id="name" placeholder="Name..." pattern="[a-zA-Z ]+" required>
+                                        </div>
+                                        <h5>Kindly pick the following:</h5>
+                                        <div class="form-group">
+                                            <label for="pizza-flavor">Pizza flavor</label>
+                                            <select class="form-control" id="pizza-flavor" required>
+                                                <option>Hawaiian</option>
+                                                <option>Margharita</option>
+                                                <option>Marinara</option>
+                                                <option>Mushroom</option>
+                                                <option>Original Veggie</option>
+                                                <option>Oyster</option>
+                                                <option>Pepperoni</option>
+                                                <option>Pulled Pork</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pizza-size">Pizza size</label>
+                                            <select class="form-control" id="pizza-size" required>
+                                                <option>Small</option>
+                                                <option>Medium</option>
+                                                <option>Large</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pizza-crust">Pizza Crust</label>
+                                            <select class="form-control" id="pizza-crust" required>
+                                                <option>Gluten Free</option>
+                                                <option>Hand Tossed</option>
+                                                <option>Original</option>
+                                                <option>Pan</option>
+                                                <option>Stuffed</option>
+                                                <option>Thin</option>
+                                            </select>
+                                        </div>                
+                                            <br>
+                                            <div class="">
+                                                <div class="form-group">
+                                                    <label for="pizza-number">Number of Pizzas</label>
+                                                    <input type="number" id="quantity" name="quantity"  placeholder="PizzaNo" min="1">
+                                                    <button type="submit" name="submitButton" class= class="btn submit" id="placeorder">Place Order</button>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                              
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
             </div>
             <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
