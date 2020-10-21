@@ -20,3 +20,6 @@ body {
 .content__main {
 	color: var(--color-main-text);
 }
+.content__text {
+	mix-blend-mode: var(--color-text);
+}
