@@ -1,3 +1,4 @@
+
 // Bussiness Logic
 
 function order(){
@@ -15,65 +16,67 @@ function order(){
             }
         );
         let number=$("#quantity").val();
-
-         //SETTING DIFFERENT PRICES FOR THE PIZZA FLAVORS
     
-         let sizeCost;
-         if(flavor === "Bbq Beef" || flavor === "Chicken Tikka" || flavor === "Hawaiian" ) {
-             if(size === "Small"){
-                 sizeCost = 400;
-             }
-             else if(size==="Medium"){
-                 sizeCost = 650;
-             }
-             else if(size === "Large"){
-                 sizeCost = 900;
-             }
-         }
-         else if(flavor === "Grilled Pork" || flavor === "Margharita" || flavor === "Marinara" || flavor === "Pulled Pork" ){
-             if(size === "Small"){
-                 sizeCost = 450;
-             }
-             else if(size==="Medium"){
-                 sizeCost = 700;
-             }
-             else if(size === "Large"){
-                 sizeCost = 950;
-             }
-         }
-         else if(flavor === "Mushroom" || flavor === "Original Veggie" || flavor === "Oyster" || flavor === "Pepperoni"){
-             if(size === "Small"){
-                 sizeCost = 500;
-             }
-             else if(size==="Medium"){
-                 sizeCost = 800;
-             }
-             else if(size === "Large"){
-                 sizeCost = 1100;
-             }
-         }
-     //SETTING PRICES FOR DIFFERENT CRUST TYPES
+    //SETTING DIFFERENT PRICES FOR THE PIZZA FLAVORS
     
-     let crustCost;
-     if (crust === "Gluten Free"){
-         crustCost = 400;
-     }
-     else if( crust === "Hand Tossed"){ 
-         crustCost = 220;
-     }
-     else if( crust === "Original"){ 
-         crustCost = 150;
-     }
-     else if( crust === "Pan"){ 
-         crustCost = 150;
-     }  
-     else if( crust === "Stuffed"){ 
-         crustCost = 100;
-     }  
-     else if( crust === "Thin"){ 
-         crustCost = 200;
-     }
- // TOPPINGS CHECKBOX, SETTING THE PRICES ACCORDING TO SIZES
+        let sizeCost;
+        if(flavor === "Bbq Beef" || flavor === "Chicken Tikka" || flavor === "Hawaiian" ) {
+            if(size === "Small"){
+                sizeCost = 400;
+            }
+            else if(size==="Medium"){
+                sizeCost = 650;
+            }
+            else if(size === "Large"){
+                sizeCost = 900;
+            }
+        }
+        else if(flavor === "Grilled Pork" || flavor === "Margharita" || flavor === "Marinara" || flavor === "Pulled Pork" ){
+            if(size === "Small"){
+                sizeCost = 450;
+            }
+            else if(size==="Medium"){
+                sizeCost = 700;
+            }
+            else if(size === "Large"){
+                sizeCost = 950;
+            }
+        }
+        else if(flavor === "Mushroom" || flavor === "Original Veggie" || flavor === "Oyster" || flavor === "Pepperoni"){
+            if(size === "Small"){
+                sizeCost = 500;
+            }
+            else if(size==="Medium"){
+                sizeCost = 800;
+            }
+            else if(size === "Large"){
+                sizeCost = 1100;
+            }
+        }
+    
+    //SETTING PRICES FOR DIFFERENT CRUST TYPES
+    
+        let crustCost;
+        if (crust === "Gluten Free"){
+            crustCost = 400;
+        }
+        else if( crust === "Hand Tossed"){ 
+            crustCost = 220;
+        }
+        else if( crust === "Original"){ 
+            crustCost = 150;
+        }
+        else if( crust === "Pan"){ 
+            crustCost = 150;
+        }  
+        else if( crust === "Stuffed"){ 
+            crustCost = 100;
+        }  
+        else if( crust === "Thin"){ 
+            crustCost = 200;
+        }
+    
+    // TOPPINGS CHECKBOX, SETTING THE PRICES ACCORDING TO SIZES
     
         //getting the number of checkboxes checked
         var checkboxes= $('input[name="toppings"]:checked').length;
@@ -129,6 +132,7 @@ function order(){
         $(".phone").text(phone);
         $("#delivery").hide();
     
+    
     }
     //USER INTERFACE
     $(document).ready(function(){
@@ -140,9 +144,11 @@ function order(){
             event.preventDefault();
             makeDelivery();
         });
-    }); 
+    });
+    
+    
     var arrayTotal = []; //global array used to store all total prices for each order
-
+    
     //Deliver
     $(".deliver").click(function () {
         $('.summary').slideUp();
@@ -153,8 +159,9 @@ function order(){
         $('.cdata-overlay').slideDown();
     });
 
-     //Pick Up
-     $(".delivernot").click(function () {
+
+    //Pick Up
+    $(".delivernot").click(function () {
 
     });
     
