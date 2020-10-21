@@ -52,4 +52,25 @@ function order(){
                  sizeCost = 1100;
              }
          }
-     
+     //SETTING PRICES FOR DIFFERENT CRUST TYPES
+    
+     let crustCost;
+     if (crust === "Gluten Free"){
+         crustCost = 400;
+     }
+     else if( crust === "Hand Tossed"){ 
+         crustCost = 220;
+     }
+     else if( crust === "Original"){ 
+         crustCost = 150;
+     }
+     else if( crust === "Pan"){ 
+         crustCost = 150;
+     }  
+     else if( crust === "Stuffed"){ 
+         crustCost = 100;
+     }  
+     else if( crust === "Thin"){ 
+         crustCost = 200;
+     }
+ 
