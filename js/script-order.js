@@ -152,3 +152,69 @@ function order(){
         $('.delivernot').hide(1000);
         $('.cdata-overlay').slideDown();
     });
+
+     //Pick Up
+     $(".delivernot").click(function () {
+
+    });
+    
+    function deliveryOptions(){
+        $("#options").show();
+        $("#deliveryOptions").show();
+        $("#orderDetails").hide();
+        //reseting the form
+    
+        document.getElementById("orders").reset();
+    
+        //Enable the place order button
+    
+        $('#placeorder').prop('disabled', false);
+    
+        var checkoutTotal =0;
+        arrayTotal.forEach(function(index){
+            checkoutTotal =checkoutTotal + index;
+        });
+    
+        $(".totalPick").text(checkoutTotal);
+    
+        var checkoutTotalDel = checkoutTotal +200;
+    
+        $(".totalDel").text(checkoutTotalDel);
+    
+    }
+    
+    
+    function pickUp(){
+        $("#pickUpConfirmation").show();
+        $("#yourOrder").hide();
+    }
+    
+    function delivery() {
+        $("#delivery").show();
+        $("#deliveryDetails").show();
+        // $("#yourorder").hide();
+      }
+    
+    function deliveryConfirm(){
+        $("#deliveryConfirmation").show();
+        $("#yourOrder").hide();
+    }  
+       
+      
+      function reloadPage() {
+        location.reload(); //reload contents of page to original status
+      }
+      
+      function clearTextarea() {
+        $("#messageForm").reset(); //reset textarea inputs
+      }
+      
+      function addOrder() {
+        $('#placeorder').prop('disabled', false); //enable button
+        $("input[type='checkbox']").prop({ //enable checkboxes
+            disabled: false
+        });
+        $("input[type='checkbox']").prop({ //uncheck previously checked checkboxes
+            checked: false
+        });
+      } 
