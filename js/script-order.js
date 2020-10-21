@@ -73,4 +73,61 @@ function order(){
      else if( crust === "Thin"){ 
          crustCost = 200;
      }
- 
+ // TOPPINGS CHECKBOX, SETTING THE PRICES ACCORDING TO SIZES
+    
+        //getting the number of checkboxes checked
+        var checkboxes= $('input[name="toppings"]:checked').length;
+    
+        //limit number of checkboxes to 3
+        // if(checkboxes<=3){
+            if(size === "Small"){
+                var toppingsCost = checkboxes * 100;
+            }
+            else if(size === "Medium"){
+                var toppingsCost = checkboxes * 120;
+            }
+            else if(size === "Large"){
+                var toppingsCost= checkboxes * 140;
+            }
+        
+        //disable unchecked boxes
+        $("input[type='checkbox']:not(:checked)").prop({ 
+            disabled: true
+        });
+    
+        //deactivate button after order is made to prevent client from changing order once the order is placed 
+        $('#placeorder').prop('disabled', true);    
+        
+    //GETTING THE TOTAL AMOUNT
+        $("#yourorder").show();
+    
+        var price =(sizeCost + crustCost);
+        var totalPrice = parseInt(price*number);
+        
+        $(".salutation").text("Hey " + name +" . Here's your order:");
+        $(".pizza-size").append('<tr><td id="pizza-size">'+ size);
+        $(".number").append('<tr><td id="number">' + number);
+        $(".pizza-crust").append('<tr><td id="pizza-crust">' + crust);
+        $(".pizza-flavor").append('<tr><td id="pizza-flavor">' + flavor);
+        $(".pizzaTotal1").append('<tr><td id="pizzaTotal1">' + totalPrice);
+        // $(".toppings").append('<tr><td id="pizza-toppings">' + toppings);
+    
+      
+    
+    //ADDING THE MAKE DELIVERY FUNCTION 
+       
+                       
+    }
+    function makeDelivery() {
+        $("#deliveryConfirmation").show;
+    
+        //getting user delivery location
+        var location=$("input#location").val();
+        var phone=$("input#phone").val();
+    
+        $(".location").text(location);
+        $(".phone").text(phone);
+        $("#delivery").hide();
+    
+    }
+    
