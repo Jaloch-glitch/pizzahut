@@ -15,3 +15,41 @@ function order(){
             }
         );
         let number=$("#quantity").val();
+
+         //SETTING DIFFERENT PRICES FOR THE PIZZA FLAVORS
+    
+         let sizeCost;
+         if(flavor === "Bbq Beef" || flavor === "Chicken Tikka" || flavor === "Hawaiian" ) {
+             if(size === "Small"){
+                 sizeCost = 400;
+             }
+             else if(size==="Medium"){
+                 sizeCost = 650;
+             }
+             else if(size === "Large"){
+                 sizeCost = 900;
+             }
+         }
+         else if(flavor === "Grilled Pork" || flavor === "Margharita" || flavor === "Marinara" || flavor === "Pulled Pork" ){
+             if(size === "Small"){
+                 sizeCost = 450;
+             }
+             else if(size==="Medium"){
+                 sizeCost = 700;
+             }
+             else if(size === "Large"){
+                 sizeCost = 950;
+             }
+         }
+         else if(flavor === "Mushroom" || flavor === "Original Veggie" || flavor === "Oyster" || flavor === "Pepperoni"){
+             if(size === "Small"){
+                 sizeCost = 500;
+             }
+             else if(size==="Medium"){
+                 sizeCost = 800;
+             }
+             else if(size === "Large"){
+                 sizeCost = 1100;
+             }
+         }
+     
