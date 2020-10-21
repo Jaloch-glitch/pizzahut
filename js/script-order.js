@@ -141,3 +141,4 @@ function order(){
             makeDelivery();
         });
     }); 
+    var arrayTotal = []; //global array used to store all total prices for each order
